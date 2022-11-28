@@ -16,7 +16,7 @@ def scan(addr, port):
 ports = [21, 22, 25, 80]
 #Parte 4
 for i in range(1, 255):
-    addr="192.168.0.{}".format(i)
+    addr="<ip>{}".format(i)
     for port in ports:
         result=scan(addr, port)
         if result==0:
